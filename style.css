@@ -1,190 +1,116 @@
-/* Add Global  Variables and classes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap");
 
-:root {
-  /**
-     * colors
-     */
-
-  --jet: #333333;
-  --white: #ffffff;
-  --black: #000000;
-  --onyx-1: #3d3d3d;
-  --onyx-2: #404040;
-  --gray-web: #7a7a7a;
-  --light-gray: #cccccc;
-  --davys-gray: #545454;
-  --field-drab: #655720;
-  --red-crayola: #d9534f;
-  --golden-puppy: #d88b2a;
-  --quick-silver: #a3a3a3;
-  --sonic-silver: #b2b2b2;
-  --eerie-black-1: #262626;
-  --eerie-black-2: #1c1c1c;
-  --rich-black-fogra-39: #050505;
-
-  /**
-     * typography
-     */
-
-  --ff-roboto: "Roboto", sans-serif;
-
-  --fs-1: 32px;
-  --fs-2: 20px;
-  --fs-3: 19px;
-  --fs-4: 18px;
-  --fs-5: 16px;
-  --fs-6: 15px;
-  --fs-7: 14px;
-  --fs-8: 13px;
-  --fs-9: 12px;
-  --fs-10: 11px;
-
-  --fw-500: 500;
-  --fw-700: 700;
-
-  /**
-     * transition
-     */
-
-  --transition: 0.15s ease-in-out;
-}
-
-/* Css Reset */
-
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #1a1a1b;
+  font-family: 'Poppins', sans-serif;
 }
 
-a {
+
+/* header styling */
+header{
+  padding: 20px;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link-container{
+  padding: 0 20px;
+  width: 40rem;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+li{
+  color: #fff;
   text-decoration: none;
-}
-
-li {
   list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
-button {
-  color: inherit;
-  background: none;
-  border: none;
-  font: inherit;
+
+li .nav-items{
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+
+.nav-items:hover{
+  color: #f3dc15;
   cursor: pointer;
 }
 
-button,
-img,
-input,
-a,
-span,
-ion-icon {
-  display: block;
+.nav-action-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
 }
 
-input {
-  font: inherit;
+.search-input{
+  padding: 10px 20px;
+  border-radius: 5px;
   border: none;
+  outline: none;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f3dc15;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-html {
-  font-family: var(--ff-roboto);
-  color: var(--quick-silver);
-  line-height: 1.3;
-  scroll-behavior: smooth;
+.theme-toggle-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-body {
-  background: var(--rich-black-fogra-39);
-  min-width: 280px;
+.theme-toggle-btn{
+  padding: 15px 15px;
+  border-radius: 30rem;
+  border: none;
+  outline: none;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-button,
-a,
-input,
-[tabindex] {
-  outline-offset: 4px;
+.theme-toggle-btn:hover{
+  background-color: #f3dc15;
+  color: #000;
 }
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--rich-black-fogra-39);
-  border-left: 1px solid var(--onyx-1);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--golden-puppy);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  --golden-puppy: hsl(47, 100%, 40%);
-}
-
-::-webkit-scrollbar-button {
-  height: 5px;
-}
-
-/* Reused Styling */
-
-.container {
-    padding: 0 12px;
-  }
-  
-  .h1,
-  .h2,
-  .h3 {
-    color: var(--white);
-  }
-  
-  .h1 {
-    font-size: var(--fs-1);
-    text-transform: capitalize;
-  }
-  
-  .h2 {
-    font-size: var(--fs-3);
-  }
-  
-  .h3 {
-    font-size: var(--fs-2);
-  }
-  
-  .h4 {
-    color: inherit;
-    font-size: var(--fs-5);
-    font-weight: var(--fw-700);
-  }
-  
-  .h5 {
-    font-size: var(--fs-6);
-    font-weight: var(--fw-500);
-  }
-  
-  .btn {
-    color: var(--white);
-    font-size: var(--fs-9);
-    font-weight: var(--fw-500);
-    text-transform: uppercase;
-    min-width: 130px;
-    padding: 10px 15px;
-    border: 1px solid var(--golden-puppy);
-    border-radius: 4px;
-  }
-  
-  .btn-primary {
-    background: var(--golden-puppy);
-    color: var(--black);
-  }
-  
-  .btn-primary:is(:hover, :focus) {
-    --golden-puppy: hsl(47, 100%, 45%);
-  }
-  
-  .btn-secondary:is(:hover, :focus) {
-    background: hsla(47, 100%, 45%, 0.1);
-  }
