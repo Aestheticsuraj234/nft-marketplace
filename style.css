@@ -1,116 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #1a1a1b;
-  font-family: 'Poppins', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-/* header styling */
+body{
+    background-color: #212121;
+}
+
+
+/* navbar */
+
 header{
-  padding: 20px;
-  border-bottom: 1px solid #3d3d3d;
+    padding: 20px;
+    border-bottom: 1px solid #3d3d3d;
 }
 
 .nav-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-link-container{
-  padding: 0 20px;
-  width: 40rem;
+.nav-links-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:38rem;
 }
+
 
 .nav-links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 1.2rem;
-}
-
-li{
-  color: #fff;
-  text-decoration: none;
-  list-style: none;
-  font-size: 1rem;
-  font-weight: 600;
-
-  transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    gap: 20px;
 }
 
 
-li .nav-items{
-  color: #fff;
-  text-decoration: none;
-  list-style: none;
-  font-size: 1rem;
-  font-weight: 600;
-
-  transition: all 0.3s ease;
+.navbar-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-
-.nav-items:hover{
-  color: #f3dc15;
-  cursor: pointer;
-}
-
-.nav-action-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
+.nav-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 
 }
 
-.search-input{
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background-color: #3d3d3d;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-}
-button{
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background-color: #f3dc15;
-  color: #000;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
+.search-bar{
+    background-color: #3d3d3d;
+    border: none;
+    outline: none;
+    padding:14px;
+    width: 15rem;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.theme-toggle-btn-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
+.btn-primary{
+    background-color: #d88b2a;
+    border: none;
+    outline: none;
+    padding: 14px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.theme-toggle-btn{
-  padding: 15px 15px;
-  border-radius: 30rem;
-  border: none;
-  outline: none;
-  background-color: #3d3d3d;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-}
 
-.theme-toggle-btn:hover{
-  background-color: #f3dc15;
-  color: #000;
-}
+
+

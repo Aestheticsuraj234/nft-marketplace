@@ -1,0 +1,7 @@
+*Day 1: Introduction to HTML and CSS*
+
+- Brief introduction to the workshop and project.
+- Basics of HTML: Structure, tags, headings, paragraphs, lists.
+- Set up the HTML file for the NFT Marketplace landing page (linking fonts, scripts, stylesheets).
+- Basic CSS reset and variable setup.
+- Create a complete navbar
