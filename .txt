@@ -1,3 +1,14 @@
 background-color = #212121;
 bdr-color = #3d3d3d
 btn-primary = #d88b2a
+btn-secondary = #3d3d3d
+hero-banner = #262626
+
+
+/* Hero-section */
+ .hero-title > span{
+     display: inline-block;
+-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d88b2a;
+    -webkit-text-fill-color: transparent;
+}
