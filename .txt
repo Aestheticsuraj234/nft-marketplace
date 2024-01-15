@@ -4,6 +4,9 @@ btn-primary = #d88b2a
 btn-secondary = #3d3d3d
 hero-banner = #262626
 
+card-bg = #262626
+card-brd = #3d3d3d
+
 
 /* Hero-section */
  .hero-title > span{
