@@ -18,3 +18,5 @@
 - Set the basic structure of the New Product Section.
 - - Create an NFT product card with well-named classes.
 - Style the section.
+
+

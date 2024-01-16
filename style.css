@@ -258,6 +258,97 @@ header {
 }
 
 
+.card-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-title{
+  color:white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+.user-data-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
+
+.user-img{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #050505;
+}
+
+.name-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+
+.user-fullname{
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.user-username{
+  color: #c7bcbc;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.user-username:hover{
+  color: #d88b2a;
+  cursor: pointer ;
+}
+
+
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-footer-text{
+  margin-top: 8px;
+  color: #c7bcbc;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+.card-footer-btn{
+  background-color: #d88b2a;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
 /* flex-box
 
 .container{
