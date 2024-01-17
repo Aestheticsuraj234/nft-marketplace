@@ -15,3 +15,15 @@ card-brd = #3d3d3d
     -webkit-text-stroke-color: #d88b2a;
     -webkit-text-fill-color: transparent;
 }
+
+
+About-section
+
+title-color = #fff;
+about-item-bg = #1c1c1c;
+about-card-bdr = #3d3d3d;
+
+about-card-after&before = #c7bcbc;
+card-number-bg = #262626
+cn-color = #3d3d3d;
+card-number-border-bdr =#1c1c1c

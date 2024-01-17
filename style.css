@@ -186,6 +186,7 @@ header {
 }
 
 .lower-section{
+  margin-top: 60px;
 
 }
 
@@ -348,6 +349,104 @@ header {
   transition: all 0.3s ease;
 
 }
+
+/* *About Section Css */
+.about{
+  padding: 50px;
+}
+
+.about-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.about-title{
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.about-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.about-items-list{
+  list-style: none;
+  background-color: #1c1c1c;
+  border-radius: 4px;
+  padding: 20px;
+
+}
+
+.about-item{
+  position: relative;
+  padding: 30px 10px 20px;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.about-item::before,
+.about-item::after{
+  content: "";
+  position: absolute;
+  bottom:-2px;
+  right: -2px;
+  background-color: #c7bcbc;
+  border-radius: 10px;
+}
+
+
+.about-item::before{
+  height:100px;
+  width:3px;
+}
+
+.about-item::after{
+  height:3px;
+  width:100px;
+}
+
+
+.card-number{
+  background-color: #262626;
+  color:#3d3d3d;
+  padding: 5px 15px;
+  position: absolute;
+  top:-15px;
+  left:-15px;
+  border-top-left-radius: 10px;
+  border:15px solid #1c1c1c;
+  font-size: 28px;
+  font-weight: 600;
+
+
+}
+
+
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:30px;
+}
+
+.about-desc{
+  font-size: 15px;
+  color: #c7bcbc; 
+  font-weight: 400;
+  text-align: center;
+
+
+}
+
 
 /* flex-box
 
