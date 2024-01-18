@@ -168,7 +168,7 @@ header {
 .newest-section{
   padding: 50px;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #050505;
 }
 
@@ -191,9 +191,8 @@ header {
 }
 
 .lower-section-ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 25px;
 
 }
@@ -255,9 +254,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: red;
+  color: #eeeaea;
+  cursor: pointer;
 }
 
+.btn-heart.active{
+  color:#ed3030;
+}
 
 .card-content{
   display: flex;
